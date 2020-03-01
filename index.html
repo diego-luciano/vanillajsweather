@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanillaJS Weather</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Montserrat', 'sans-serif';" class="bg-gray-300">
+    <nav class="flex items-center justify-center bg-gray-900 p-5">
+        <img class="h-8" src="img/logo.png" alt="logo">
+        <h1 class="text-white ml-2 text-2xl font-semibold">VanillaJS Weather</h1>
+    </nav>
+    <header class="bg-blue-700 pt-5 pb-10">
+        <div class="mt-5">
+            <div class="flex items-center justify-center">
+                <p id="day" class="text-center text-2xl text-white">Tuesday</p>
+            </div>
+            <div class="mt-5 flex items-center justify-center">
+                <div>
+                    <p id="country" class="text-center text-white text-3xl font-bold">Moscow</p>
+                    <p id="temperature" class="text-center text-white font-extrabold text-6xl">+27°</p>
+                </div>
+                <div class="mx-10"></div>
+                <img class="h-20 cursor-pointer" src="img/cloud.png" alt="cloud" onclick="startRequest()">
+            </div>
+        </div>
+        <div class="mt-5 mx-3">
+            <h1 class="text-white text-center uppercase text-3xl font-bold">properties</h1>
+            <div class="mt-5 flex items-center justify-center">
+                <div class="mx-3">
+                    <p class="text-white">Humidity</p>
+                    <p id="humidity" class="text-center text-white font-bold">80%</p>
+                </div>
+                <div class="mx-3">
+                    <p class="text-white text-center">Wind</p>
+                    <p id="wind" class="text-center text-white font-bold">80%</p>
+                </div>
+                <div class="mx-3">
+                    <p class="text-white text-center">Pressure</p>
+                    <p id="air-pressure" class="text-center text-white font-bold">80%</p>
+                </div>
+                <div class="mx-3">
+                    <p class="text-white text-center">Lon</p>
+                    <p id="longitude" class="text-center text-white font-bold">80%</p>
+                </div>
+                <div class="mx-3">
+                    <p class="text-white text-center">Lat</p>
+                    <p id="latitude" class="text-center text-white font-bold">80%</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-blue-500 p-5">
+        <h3 class="text-center text-white my-3">* This section is only for design purposes *</h3>
+        <div class="flex items-center justify-around my-5">
+            <p class="text-white">Wednesday, 16</p>
+            <img class="h-10" src="img/cloud.png" alt="cloud">
+            <p class="text-white font-bold">+26°</p>
+            <p class="text-white">+26°</p>
+        </div>
+        <div class="flex items-center justify-around my-5">
+            <p class="text-white">Wednesday, 16</p>
+            <img class="h-10" src="img/cloud.png" alt="cloud">
+            <p class="text-white font-bold">+26°</p>
+            <p class="text-white">+26°</p>
+        </div>
+        <div class="flex items-center justify-around my-5">
+            <p class="text-white">Wednesday, 16</p>
+            <img class="h-10" src="img/cloud.png" alt="cloud">
+            <p class="text-white font-bold">+26°</p>
+            <p class="text-white">+26°</p>
+        </div>
+        <div class="flex items-center justify-around my-5">
+            <p class="text-white">Wednesday, 16</p>
+            <img class="h-10" src="img/cloud.png" alt="cloud">
+            <p class="text-white font-bold">+26°</p>
+            <p class="text-white">+26°</p>
+        </div>
+        <div class="flex items-center justify-around my-5">
+            <p class="text-white">Wednesday, 16</p>
+            <img class="h-10" src="img/cloud.png" alt="cloud">
+            <p class="text-white font-bold">+26°</p>
+            <p class="text-white">+26°</p>
+        </div>
+    </section>
+    <footer class="flex items-center justify-center bg-gray-900 p-5">
+        <h1 class="text-white">coded by: Diego Luciano</h1>
+        <span class="text-white mx-2">&mdash;</span>
+        <a class="text-white" href="https://github.com/diego-luciano" target="_blank">Github</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
