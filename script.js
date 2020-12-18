@@ -2,7 +2,7 @@ let countriesApiUrl = 'https://restcountries.eu/rest/v2/all';
 
 let days = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
-let day = document.querySelector("#day").innerHTML = days[new Date().getDate()];
+let day = document.querySelector("#day").innerHTML = days[new Date().getDay() + 1];
 
 let currentCountry = document.querySelector("#country");
 let temperature = document.querySelector("#temperature");
